@@ -51,5 +51,14 @@ namespace tEOREMAdOmACACOiNFINITO
             }
         }
 
+        private void lblAJUDA_MouseEnter(object sender, EventArgs e)
+        {
+            lblAJUDA.Text = "xxxxxxxx\r\nxxxxxxxx\r\nxxxxxxxx\r\nxxxxxxxx.";
+        }
+
+        private void lblAJUDA_MouseLeave(object sender, EventArgs e)
+        {
+            lblAJUDA.Text = "?";
+        }
     }
 }
