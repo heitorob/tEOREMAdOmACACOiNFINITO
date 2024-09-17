@@ -20,11 +20,11 @@ namespace tEOREMAdOmACACOiNFINITO
 
         private void btnGERAR_Click(object sender, EventArgs e)
         {
-            int nivel = trkNIVEL.Value * 50;
+            int nivel = (trkNIVEL.Value * 50) - 1;
 
             string texto = Generatetexto(nivel);
 
-            txtTEOREMA.Text = texto;
+            txtTEOREMA.Text = "➤" + texto;
         }
 
         static string Generatetexto(int nivel)
@@ -51,14 +51,18 @@ namespace tEOREMAdOmACACOiNFINITO
             }
         }
 
-        private void lblAJUDA_MouseEnter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            lblAJUDA.Text = "xxxxxxxx\r\nxxxxxxxx\r\nxxxxxxxx\r\nxxxxxxxx.";
-        }
-
-        private void lblAJUDA_MouseLeave(object sender, EventArgs e)
-        {
-            lblAJUDA.Text = "?";
+            MessageBox.Show("CONFIGURAÇÕES DO JOGO\n" +
+                "- Aperte GERAR para invocar uma seleção de letras aleatória.\n" +
+                "- Ajuste o número de linhas geradas usando a Barra de Ajuste.\n\n" +
+                "REGRAS E OBJETIVOS\n" +
+                "- Selecione na caixa de texto onde a seta ➤ está indicando.\n" +
+                "- Use a tecla DELETE para apagar as letras à frente.\n" +
+                "- Use a tecla -> caso queira manter uma letra.\n" +
+                "- Use a tecla ENTER quando tiver terminado uma palavra.\n" +
+                "- Tente formar o máximo de palavras possíveis.",
+                "AJUDA", MessageBoxButtons.OK);
         }
     }
 }

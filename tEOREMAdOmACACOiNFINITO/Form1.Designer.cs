@@ -35,7 +35,8 @@ namespace tEOREMAdOmACACOiNFINITO
             this.txtTEOREMA = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblAJUDA = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trkNIVEL)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,23 +92,34 @@ namespace tEOREMAdOmACACOiNFINITO
             this.label2.TabIndex = 4;
             this.label2.Text = "O Jogo";
             // 
-            // lblAJUDA
+            // button1
             // 
-            this.lblAJUDA.AutoSize = true;
-            this.lblAJUDA.Location = new System.Drawing.Point(728, 355);
-            this.lblAJUDA.Name = "lblAJUDA";
-            this.lblAJUDA.Size = new System.Drawing.Size(13, 26);
-            this.lblAJUDA.TabIndex = 5;
-            this.lblAJUDA.Text = "?";
-            this.lblAJUDA.MouseEnter += new System.EventHandler(this.lblAJUDA_MouseEnter);
-            this.lblAJUDA.MouseLeave += new System.EventHandler(this.lblAJUDA_MouseLeave);
+            this.button1.Font = new System.Drawing.Font("JetBrains Mono", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(681, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 45);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "?";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Imprint MT Shadow", 8.25F);
+            this.label3.Location = new System.Drawing.Point(462, 387);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Nº de linhas";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblAJUDA);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTEOREMA);
@@ -128,7 +140,8 @@ namespace tEOREMAdOmACACOiNFINITO
         private System.Windows.Forms.TextBox txtTEOREMA;
         private Label label1;
         private Label label2;
-        private Label lblAJUDA;
+        private Button button1;
+        private Label label3;
     }
 }
 
